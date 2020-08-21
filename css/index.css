@@ -1,6 +1,6 @@
 #navigation
 {
-    background:url("/img/wolf.jpg");
+    background:url("img/wolf.jpg");
     background-position: center;
     background-size: cover;
     min-height: 500px;
