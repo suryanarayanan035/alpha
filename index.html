@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Developers</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+   
+        <header id="navigation">
+            <nav class="nav-wrapper white" >
+                <div class="container">
+                    <a class="brand-logo teal-text" href="#">Alpha Coders</a>
+                    <a  class="sidenav-trigger" href="#" data-target="mobile-links"><i class="material-icons teal-text">
+                        menu
+                    </i></a>
+                    <ul class="right  hide-on-med-and-down">
+                        <li><a href="index.html" class="teal-text">Home</a></li>
+                        <li><a href="contactus.html" class="teal-text">Contact Us</a></li>
+                        <li><a href="#services" class="teal-text">Services</a></li>
+                    </ul></div>
+            </nav>
+
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="#services" class="teal-text">Services</a></li>
+            </ul>
+            
+            <div class="center" id="gitbutton">
+                <button class="btn red white-text center-align">View Our Github</button>
+            </div>                        
+        </header>
+    <div class="container scrollspy" id="services">
+        <div class="row">
+            <p class="flow-text teal-text">Services Offered</p>
+            <div class="col s12 l4">
+                <img src="img/webdevelopment.jpg" alt="Web Development" class="responsive-img">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <p style="margin-top: 10%;"> We work to deliver highly optimized mobile responsive web applications across all verticals.
+                We are specialized in developing custom websites that include various features to integrate with all business intelligence. 
+                We are highly proficient in delivering web development solutions that are tailor-made for your business model.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/onlineselling.jpeg" alt="Web Development" class="responsive-img">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h4>Zhagaram - online selling platform</h4>
+                <p>We hav our own online selling platform zhagaram. It is a place where retailers and 
+                    customers get connected together.It has a simple signup process.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer teal">
+
+        <h6 class="center">Suryanarayanan035@gmail.com | +91 8428169669</h6>
+
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('#happytext').slideUp();
+        $('#happytext').slideDown(2000);
+        $('.scrollspy').scrollSpy();
+    })
+</script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Alpha Coders</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/contactus.css">
+</head>
+<body>
+    <header id="navigation">
+        <nav class="nav-wrapper transparent" >
+            <div class="container">
+                <a class="brand-logo teal-text" >Alpha Coders</a>
+                <a  class="sidenav-trigger" href="#" data-target="mobile-links"><i class="material-icons teal-text">
+                    menu
+                </i></a>
+                <ul class="right hide-on-med-and-down ">
+                    <li><a href="index.html" class="teal-text">Home</a></li>
+                    <li><a href="contactus.html" class="teal-text">Contact Us</a></li>
+                </ul></div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+                           
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col l5 s12 grey lighten-3" style="margin:2%">
+                <h5 class="green-text text-lighten-1">Contact Us</h5>
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix teal-text">account_circle</i>
+                        <input type="text" name="name" id="name">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix teal-text">local_phone</i>
+                        <input type="text" name="mobileNo" id="mobileNo">
+                        <label for="mobileNo">MobileNo</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix teal-text">alternate_email</i>
+                        <input type="text" name="email" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix teal-text">message</i>
+                        <textarea id="message" name="message" rows="80"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="center">
+                        <button class="btn teal">Send
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="col s12 l5 offset-l1 center-align indigo-text " id="happy" >
+                
+                <h3 id="happytext">Happy to Serve You :)</h3>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="page-footer teal" >
+
+        <h6 class="center">Suryanarayanan035@gmail.com | +91 8428169669</h6>
+
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('#happytext').slideUp();
+        $('#happytext').slideDown(2000);
+    })
+</script>
+</html>
