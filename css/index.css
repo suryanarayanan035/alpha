@@ -1,6 +1,6 @@
 #navigation
 {
-    background:url("https://github.com/suryanarayanan035/alpha/blob/master/img/wolf.jpg?raw=true");
+    background:url("/img/wolf.jpg");
     background-position: center;
     background-size: cover;
     min-height: 500px;
